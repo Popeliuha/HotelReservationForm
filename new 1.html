@@ -1,0 +1,119 @@
+<head>
+	<link href="style.css" rel="stylesheet">
+	
+
+	<title>Hotel reservation form</title>
+</head>
+
+<body align ="center">
+	<div  id="page">
+		<form>
+			<div id="personinfo">
+				<h1>Hotel reservation form</h1>
+				<div> 
+					First name
+					<input type="text" id="data_2" name="data_2" />
+				</div>
+				<div> 
+					Last name
+					<input type="text" id="data_3" name="data_3" />
+				</div>
+				<div> 
+					Screen key
+					<input type="password" id="data_4" name="data_4"/>
+				</div>
+			</div>
+
+			<div>
+				Gender :
+				<input type="radio" id="sexChoice1" name="sex" value="male"  class="sex">
+				<label for="sexChoice1">Male</label>
+		
+				<input type="radio" id="sexChoice2" name="sex" value="female"  class="sex">
+				<label for="sexChoice2">Female</label>
+			</div>
+
+			<div>
+				Born date: 
+				<select name="day" id="days" >
+				</select>
+				<select name="month" id="month" onchange="buildDaysDropDown()">
+					<option disabled>Pick month</option>
+					<option value="1">January</option>
+					<option value="2">February</option>
+					<option value="3">March</option>
+					<option value="4">April</option>
+					<option value="5">May</option>
+					<option value="6">June</option>
+					<option value="7">July</option>
+					<option value="8">August</option>
+					<option value="9">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+				<select name="years" id="year" onchange="buildDaysDropDown()"></select>
+			</div>
+			<div id="services">
+				<h3>Custom service:</h3> 
+					<input type="checkbox" id ="ch1" name="option1" value="a1"><label for="ch1">Breakfast</label>
+					<input type="checkbox" id ="ch2" name="option2" value="a2"><label for="ch2">Skii transfer</label><br>
+					<input type="checkbox" id ="ch3" name="option3" value="a3"><label for="ch3">Gym and pool pass</label>
+					<input type="checkbox" id ="ch4" name="option4" value="a4"><label for="ch4">Fridge</label><br>
+					<input type="checkbox" id ="ch5" name="option5" value="a5"><label for="ch5">Skii pass</label>
+			</div>
+			<div id="options">
+				Avaliable rooms
+				<select name="room">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+				</select>
+				Adult count
+				<select name="adult">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+				</select>
+			</div>
+				
+			<div id="dates">
+				<h3>Reservation dates</h3>
+				<input type="date" id="arrival">
+				-
+				<input type="date" id="departure">
+			</div>
+			<div>
+				<h3>How did you know bout us?</h3>
+				<div>
+					<input type="radio" id="1" name="infoRadioBtn">
+					<label for="1">Advert</label>
+					<input type="radio" id="2" name="infoRadioBtn">
+					<label for="2">Friend suggested</label>
+					<input type="radio" id="3" name="infoRadioBtn">
+					<label for="3">Other</label>
+				</div>
+			</div>
+			<div id="submbtn">
+				<input id="subb" type="submit" value="Submit"  class ="button28">
+			</div>
+			<div id="logo">
+				</br>
+				<img src="logo.png">
+			</div>
+		</form>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script src="script.js"></script>
+</body>
+
